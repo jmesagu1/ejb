@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd" version="3.1">
+  <display-name>Sample </display-name>
+  
+  <assembly-descriptor>
+  
+<!--   	<security-role> -->
+<!--   		<role-name>Dos</role-name> -->
+<!--   	</security-role> -->
+  
+<!--   	<method-permission> -->
+<!--   		<unchecked/> -->
+<!--   		<method> -->
+<!--   			<ejb-name>MyStateFul</ejb-name> -->
+<!--   			<method-name>*</method-name> -->
+<!--   		</method> -->
+  	
+<!--   	</method-permission> -->
+  
+<!--   	<method-permission> -->
+<!--   		<role-name>Dos</role-name>  		 -->
+<!--   		<method> -->
+<!--   			<ejb-name>MyStateFul</ejb-name> -->
+<!--   			<method-name>sayHello2</method-name> -->
+<!--   		</method> -->
+<!--   	</method-permission> -->
+  	
+  	
+  	
+  
+  </assembly-descriptor>
+  	
+</ejb-jar>
