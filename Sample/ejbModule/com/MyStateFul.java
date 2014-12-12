@@ -31,7 +31,7 @@ public class MyStateFul implements MyStateFulLocal, SessionSynchronization
 	@Override
 	public void sayHello() {
 
-		//throw new MyEx();
+		System.out.println("Hello 1");
 	}
 
 	@Override
@@ -39,6 +39,7 @@ public class MyStateFul implements MyStateFulLocal, SessionSynchronization
 	public void sayHello2() {
 		System.out.println(session.isCallerInRole("Uno"));
 		System.out.println(session.getCallerPrincipal().getName());
+		
 	}
 
 	@Override
@@ -56,6 +57,12 @@ public class MyStateFul implements MyStateFulLocal, SessionSynchronization
 	@Override
 	public void beforeCompletion() throws EJBException, RemoteException {
 		System.out.println("Before Completion");
+	}
+
+	@Override
+	public MyStateFulLocal getRef() {
+		
+		return session.getBusinessObject(MyStateFulLocal.class);
 	}
 
 }

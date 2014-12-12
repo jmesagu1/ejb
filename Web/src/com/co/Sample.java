@@ -43,15 +43,13 @@ public class Sample extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		try {
-			
-			stateFul.sayHello();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 		
 		try {
-			stateFul.sayHello2();
+			
+			MyStateFulLocal local =  stateFul.getRef();
+			local.sayHello();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
